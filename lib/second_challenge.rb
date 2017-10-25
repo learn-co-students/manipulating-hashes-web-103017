@@ -1,3 +1,5 @@
+
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -6,8 +8,12 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  big_list = []
 
-  
-
+  groceries.each do |category, list|
+    # binding.pry
+    list.each { |item| big_list << item }
+  end
+  # binding.pry
+  big_list
 end
